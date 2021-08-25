@@ -28,7 +28,7 @@ open class AView: UIView {
     
     // MARK: UI
     func makeUI() {
-        backgroundColor = R.color.backgorund()
+//        backgroundColor = R.color.backgorund()
     }
     
     func configLocalize() {

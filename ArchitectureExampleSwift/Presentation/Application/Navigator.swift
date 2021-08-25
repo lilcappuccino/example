@@ -86,9 +86,10 @@ class Navigator {
     func get(segue: Scene) -> UIViewController? {
         switch segue {
         case .signIn(viewModel: let viewModel):
-            
+            return SignInViewController(viewModel: viewModel as SignInViewModel, navigator: self)
         default:
-            <#code#>
+            logError("unknown view model")
+            return nil
         }
 //        switch segue {
 //        case .launch(let viewModel): return LaunchScreenViewController(viewModel: viewModel, navigator: self)
@@ -176,7 +177,7 @@ class Navigator {
             completion?()
             return
         case .rootWithNavigation(in: let window):
-            window.rootViewController = NavigationController(rootViewController: target)
+            window.rootViewController = UINavigationController(rootViewController: target)
             completion?()
             return
         case .rootWithoutWindow:
@@ -209,7 +210,7 @@ class Navigator {
         case .modal:
             // present modally
             DispatchQueue.main.async {
-                let nav = NavigationController(rootViewController: target)
+                let nav = UINavigationController(rootViewController: target)
                 sender.present(nav, animated: true, completion: completion)
             }
         case .detail:
@@ -243,7 +244,7 @@ class Navigator {
             sender.present(target, animated: anim, completion: nil)
         case .fullScreenWithNavController:
             target.modalPresentationStyle = .fullScreen
-            sender.present(NavigationController(rootViewController: target), animated: false, completion: completion)
+            sender.present(UINavigationController(rootViewController: target), animated: false, completion: completion)
         default: break
         }
     }
