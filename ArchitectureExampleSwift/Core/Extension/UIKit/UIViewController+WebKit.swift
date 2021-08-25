@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SafariServices
 
-extension LViewController {
+extension AViewController {
     
     func open(url: String) {
         if let url = URL(string: url) {
