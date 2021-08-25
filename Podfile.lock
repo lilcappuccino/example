@@ -1,0 +1,61 @@
+PODS:
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - CocoaLumberjack/Swift (3.7.2):
+    - CocoaLumberjack/Core
+  - CombineCocoa (0.3.0)
+  - IQKeyboardManager (6.5.6)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (6.3.1)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SnapKit (5.0.1)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+  - Toast-Swift (5.0.1)
+  - "UITextView+Placeholder (1.4.0)"
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - CombineCocoa
+  - IQKeyboardManager
+  - KeychainAccess
+  - Kingfisher
+  - R.swift
+  - SnapKit (~> 5.0.0)
+  - SVGKit
+  - Toast-Swift (~> 5.0.1)
+  - "UITextView+Placeholder"
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - CombineCocoa
+    - IQKeyboardManager
+    - KeychainAccess
+    - Kingfisher
+    - R.swift
+    - R.swift.Library
+    - SnapKit
+    - SVGKit
+    - Toast-Swift
+    - "UITextView+Placeholder"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  CombineCocoa: f9d1b5b786156e25357a2cc394449b279b5afc09
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+
+PODFILE CHECKSUM: 5437fdaf79275a278547fbe655a17220904e587f
+
+COCOAPODS: 1.10.1
